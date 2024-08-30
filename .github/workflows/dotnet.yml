@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Move to 03-app-dotnet directory
+      run: cd 03-app-dotnets
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
